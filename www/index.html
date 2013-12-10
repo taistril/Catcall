@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Ay Up</title>
+
+<script type="text/javascript" src="twis.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+var myScroll;
+
+function loaded() {
+	myScroll = new TWIS('#wrapper');
+
+/*
+	// Test scrollY and scrollToPage
+	setTimeout(function () {
+		myScroll.scrollToPage(3, 500);
+	}, 1000);
+
+	setTimeout(function () {
+		myScroll.scrollY(-1000, 1500);
+	}, 2000);
+*/
+
+	// Free some mem
+	window.removeEventListener('load', loaded, false);
+}
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+window.addEventListener('load', loaded, false);
+</script>
+
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="slider">
+		<div class="page">
+		
+			<table class="toptable">
+                <tr>
+                     <th>A</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+            </table>
+                  
+			   <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(0);"><img src="listen30x30.png"></a></th> 
+						  <th>&nbsp;</th> 						  					 
+					      <th>Abide</th> 
+						  <th>&nbsp;</th> 
+						  <th>Bear</th> 
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(1);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>
+					      <th>Aboon</th> 
+						  <th>&nbsp;</th> 
+						  <th>Above</th> 
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(2);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Ackle</th> 
+						  <th>&nbsp;</th> 
+						  <th>Work as intended</th> 
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(3);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Addle</th> 
+						  <th>&nbsp;</th> 
+						  <th>Earn by labour</th> 
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(4);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Addled</th> 
+						  <th>&nbsp;</th> 
+						  <th>Empty headed</th> 
+                     </tr>					 					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(5);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Afower</th> 
+						  <th>&nbsp;</th> 
+						  <th>Before</th> 
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(6);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Agen</th> 
+						  <th>&nbsp;</th> 
+						  <th>Again</th> 
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(7);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Ah</th> 
+						  <th>&nbsp;</th> 
+						  <th>I</th> 
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(8);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Aht</th> 
+						  <th>&nbsp;</th> 
+						  <th>Outside</th> 
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(9);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Allus</th>
+                          <th>&nbsp;</th>
+                          <th>Always</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(10);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Anall</th>
+                          <th>&nbsp;</th>
+                          <th>As well</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(11);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Apeth</th> 
+						  <th>&nbsp;</th> 
+						  <th>Halfpenny worth</th> 
+                     </tr>					 				 
+                     <tr>
+					      <th><a onclick="app.playAudio(12);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Appen</th>
+                          <th>&nbsp;</th>
+                          <th>Maybe</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(13);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Ard on</th>
+                          <th>&nbsp;</th>
+                          <th>Asleep</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(14);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Arf baked</th>
+                          <th>&nbsp;</th>
+                          <th>Silly</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(15);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>As Ta</th> 
+						  <th>&nbsp;</th> 
+						  <th>Have you</th> 
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(16);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Aye</th>
+                          <th>&nbsp;</th>
+                          <th>Yes</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(17);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Ay Up</th> 
+						  <th>&nbsp;</th> 
+						  <th>Hello</th> 
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+		</div>
+
+		<div class="page">
+
+				<table class="toptable">
+                <tr>
+                     <th>B</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+               </table>
+			               
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(18);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Backend</th>
+                          <th>&nbsp;</th>
+                          <th>Autumn</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(19);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Bahn</th>
+                          <th>&nbsp;</th>
+                          <th>Going to</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(20);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Baht</th>
+                          <th>&nbsp;</th>
+                          <th>Without</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(21);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Bairn</th>
+                          <th>&nbsp;</th>
+                          <th>Child</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(22);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Barmpot</th>
+                          <th>&nbsp;</th>
+                          <th>Idiot</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(23);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Bawl</th>
+                          <th>&nbsp;</th>
+                          <th>Cry</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(24);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Belongs</th>
+                          <th>&nbsp;</th>
+                          <th>Comes from</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(25);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Belt</th>
+                          <th>&nbsp;</th>
+                          <th>Hit hard</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(26);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Bide</th>
+                          <th>&nbsp;</th>
+                          <th>Put up with</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(27);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Blether</th>
+                          <th>&nbsp;</th>
+                          <th>Talk nonsense</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(28);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Blowed</th>
+                          <th>&nbsp;</th>
+                          <th>Amazed</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(29);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Bobbin out</th>
+                          <th>&nbsp;</th>
+                          <th>Going out</th>
+                     </tr>					 					 				 
+                     <tr>
+					      <th><a onclick="app.playAudio(30);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Brass</th>
+                          <th>&nbsp;</th>
+                          <th>Money</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(31);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Bray</th>
+                          <th>&nbsp;</th>
+                          <th>Hit hard</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(32);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Brussen</th>
+                          <th>&nbsp;</th>
+                          <th>Full up</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(33);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>By Gum</th>
+                          <th>&nbsp;</th>
+                          <th>My God</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+		</div>
+
+		<div class="page">
+
+				<table class="toptable">
+                <tr>
+                     <th>C</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+				</table>
+              
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(34);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Cadge</th>
+                          <th>&nbsp;</th>
+                          <th>Borrow</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(35);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Cake Ole</th>
+                          <th>&nbsp;</th>
+                          <th>Mouth</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(36);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Cal</th>
+                          <th>&nbsp;</th>
+                          <th>Gossiping</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(37);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Capped</th>
+                          <th>&nbsp;</th>
+                          <th>Surprised</th>
+                     </tr>					 					 					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(38);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Causey</th>
+                          <th>&nbsp;</th>
+                          <th>Pavement</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(39);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Champion</th>
+                          <th>&nbsp;</th>
+                          <th>Excellent</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(40);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Chuffed</th>
+                          <th>&nbsp;</th>
+                          <th>Pleased</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(41);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Chunter</th>
+                          <th>&nbsp;</th>
+                          <th>Mutter</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(42);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Claht</th>
+                          <th>&nbsp;</th>
+                          <th>Cloth</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(43);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Clahthead</th>
+                          <th>&nbsp;</th>
+                          <th>Stupid</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(44);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Clammed</th>
+                          <th>&nbsp;</th>
+                          <th>Hungry</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(45);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Coil</th>
+                          <th>&nbsp;</th>
+                          <th>Coal</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(46);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Coil Oil</th>
+                          <th>&nbsp;</th>
+                          <th>Coal Cellar</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(47);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Coit</th>
+                          <th>&nbsp;</th>
+                          <th>Coat</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(48);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Courtin</th>
+                          <th>&nbsp;</th>
+                          <th>Going out</th>
+                     </tr>					 					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+		</div>
+
+		<div class="page">
+
+				<table class="toptable">
+                <tr>
+                     <th>D</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+				</table>
+				
+                      <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(49);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Dairnst</th>
+                          <th>&nbsp;</th>
+                          <th>Dare not</th>
+                     </tr>					  
+                     <tr>
+					      <th><a onclick="app.playAudio(50);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Dander</th> 
+						  <th>&nbsp;</th> 
+						  <th>Passion</th> 					 
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(51);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Deed</th>
+                          <th>&nbsp;</th>
+                          <th>Died</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(52);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Delver</th>
+                          <th>&nbsp;</th>
+                          <th>Quarryman</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(53);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Din</th>
+                          <th>&nbsp;</th>
+                          <th>Noise</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(54);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+					      <th>Doff</th> 
+						  <th>&nbsp;</th> 
+						  <th>Remove</th> 										 
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(55);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Dollop</th>
+                          <th>&nbsp;</th>
+                          <th>Portion</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(56);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Don</th>
+                          <th>&nbsp;</th>
+                          <th>Put on</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(57);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Door Oil</th>
+                          <th>&nbsp;</th>
+                          <th>Doorway</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(58);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Dussent</th>
+                          <th>&nbsp;</th>
+                          <th>Dare not</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+		</div>
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>E</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(59);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Eck!</th>
+                          <th>&nbsp;</th>
+                          <th>Damn!</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(60);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Etten</th>
+                          <th>&nbsp;</th>
+                          <th>Eaten</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>F</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(61);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Faffin</th>
+                          <th>&nbsp;</th>
+                          <th>Messing about</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(62);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Fair</th>
+                          <th>&nbsp;</th>
+                          <th>Quite</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(63);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Famished</th>
+                          <th>&nbsp;</th>
+                          <th>Hungry</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(64);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Fast</th>
+                          <th>&nbsp;</th>
+                          <th>Short of</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(65);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Father</th>
+                          <th>&nbsp;</th>
+                          <th>Father</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(66);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Feight</th>
+                          <th>&nbsp;</th>
+                          <th>Fight</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(67);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Fettle</th>
+                          <th>&nbsp;</th>
+                          <th>Mend</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(68);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Flag</th>
+                          <th>&nbsp;</th>
+                          <th>Paving stone</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(69);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Flagging</th>
+                          <th>&nbsp;</th>
+                          <th>Wearying</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(70);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Flayed</th>
+                          <th>&nbsp;</th>
+                          <th>Frightened</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(71);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Flit</th>
+                          <th>&nbsp;</th>
+                          <th>Move house</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(72);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Flummox</th>
+                          <th>&nbsp;</th>
+                          <th>Confuse</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(73);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Frame</th>
+                          <th>&nbsp;</th>
+                          <th>Get going</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(74);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Fratching</th>
+                          <th>&nbsp;</th>
+                          <th>Arguing</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(75);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Fresh</th>
+                          <th>&nbsp;</th>
+                          <th>Slightly drunk</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(76);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Fust</th>
+                          <th>&nbsp;</th>
+                          <th>First</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>G</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(77);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gaffer</th>
+                          <th>&nbsp;</th>
+                          <th>Boss</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(78);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gainest</th>
+                          <th>&nbsp;</th>
+                          <th>Nearest</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(79);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gallivant</th>
+                          <th>&nbsp;</th>
+                          <th>Travel around</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(80);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Galluses</th>
+                          <th>&nbsp;</th>
+                          <th>Braces</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(81);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gammy</th>
+                          <th>&nbsp;</th>
+                          <th>Injured</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(82);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gapin</th>
+                          <th>&nbsp;</th>
+                          <th>Yawning</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(83);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gaupin</th>
+                          <th>&nbsp;</th>
+                          <th>Staring</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(84);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gerraway</th>
+                          <th>&nbsp;</th>
+                          <th>You don't say</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(85);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gill</th>
+                          <th>&nbsp;</th>
+                          <th>Half a pint</th>
+                     </tr>					 					 					 					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(86);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gimmer</th>
+                          <th>&nbsp;</th>
+                          <th>Silly person</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(87);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Ginnel</th>
+                          <th>&nbsp;</th>
+                          <th>Passageway</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(88);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gormless</th>
+                          <th>&nbsp;</th>
+                          <th>Stupid</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(89);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gradely</th>
+                          <th>&nbsp;</th>
+                          <th>Good</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(90);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Grand</th>
+                          <th>&nbsp;</th>
+                          <th>Very Nice</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(91);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Gumption</th>
+                          <th>&nbsp;</th>
+                          <th>Common Sense</th>
+                     </tr>				 
+                     <tr>
+					      <th><a onclick="app.playAudio(92);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Guzzle</th>
+                          <th>&nbsp;</th>
+                          <th>Eat greedily</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 		
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>H</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th>&nbsp;</th>
+					      <th>&nbsp;</th>					 
+                          <th>Not used in Yorkshire</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>I</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(93);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 					 
+                          <th>Int</th>
+                          <th>&nbsp;</th>
+                          <th>In the, or Isn't</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>J</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(94);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Jiggered</th>
+                          <th>&nbsp;</th>
+                          <th>Exhausted</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(95);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Jip</th>
+                          <th>&nbsp;</th>
+                          <th>Irritation</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(96);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Jock</th>
+                          <th>&nbsp;</th>
+                          <th>Food</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>K</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(97);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Kak handed</th>
+                          <th>&nbsp;</th>
+                          <th>Left handed</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>L</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(98);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Laiking</th>
+                          <th>&nbsp;</th>
+                          <th>Playing</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(99);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Land</th>
+                          <th>&nbsp;</th>
+                          <th>Hit</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(100);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Learn</th>
+                          <th>&nbsp;</th>
+                          <th>Teach</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(101);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Leet</th>
+                          <th>&nbsp;</th>
+                          <th>Light</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(102);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Letton</th>
+                          <th>&nbsp;</th>
+                          <th>Tell</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(103);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Lip</th>
+                          <th>&nbsp;</th>
+                          <th>Answer back</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(104);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Lug (oil)</th>
+                          <th>&nbsp;</th>
+                          <th>Ear</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(105);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Lugging</th>
+                          <th>&nbsp;</th>
+                          <th>Carrying</th>
+                     </tr>					 					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>M</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(106);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Manky</th>
+                          <th>&nbsp;</th>
+                          <th>Scruffy or Smelly</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(107);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mardy</th>
+                          <th>&nbsp;</th>
+                          <th>Moody</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(108);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mash</th>
+                          <th>&nbsp;</th>
+                          <th>Brew of tea</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(109);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Maungy</th>
+                          <th>&nbsp;</th>
+                          <th>Peevish</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(110);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mend</th>
+                          <th>&nbsp;</th>
+                          <th>Get better</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(111);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mi</th>
+                          <th>&nbsp;</th>
+                          <th>My</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(112);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Midden</th>
+                          <th>&nbsp;</th>
+                          <th>Outside toilet</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(113);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Middlin</th>
+                          <th>&nbsp;</th>
+                          <th>Average</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(114);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mind</th>
+                          <th>&nbsp;</th>
+                          <th>Watch out</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(115);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Missen</th>
+                          <th>&nbsp;</th>
+                          <th>Myself</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(116);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mithered</th>
+                          <th>&nbsp;</th>
+                          <th>Bothered</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(117);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Muck</th>
+                          <th>&nbsp;</th>
+                          <th>Dirt</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(118);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Muddled</th>
+                          <th>&nbsp;</th>
+                          <th>Confused</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(119);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mullock</th>
+                          <th>&nbsp;</th>
+                          <th>Mess</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(120);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Mun</th>
+                          <th>&nbsp;</th>
+                          <th>Must</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(121);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Munk</th>
+                          <th>&nbsp;</th>
+                          <th>Bad mood</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>N</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(122);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Nark</th>
+                          <th>&nbsp;</th>
+                          <th>Annoy</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(123);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Narky</th>
+                          <th>&nbsp;</th>
+                          <th>Irritable</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(124);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Natter</th>
+                          <th>&nbsp;</th>
+                          <th>Gossip</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(125);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Nay</th>
+                          <th>&nbsp;</th>
+                          <th>No</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(126);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Ninny</th>
+                          <th>&nbsp;</th>
+                          <th>Idiot</th>
+                     </tr>					 					 					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(127);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Nobbut</th>
+                          <th>&nbsp;</th>
+                          <th>Only</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(128);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Nowt</th>
+                          <th>&nbsp;</th>
+                          <th>Nothing</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>O</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(129);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Od</th>
+                          <th>&nbsp;</th>
+                          <th>Hold (eg. Od on a bit)</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(130);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Offcumden</th>
+                          <th>&nbsp;</th>
+                          <th>Newcomer</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(131);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Oil</th>
+                          <th>&nbsp;</th>
+                          <th>Hole</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(132);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Oss</th>
+                          <th>&nbsp;</th>
+                          <th>Horse</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(133);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Owd</th>
+                          <th>&nbsp;</th>
+                          <th>Old</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(134);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Ow do</th>
+                          <th>&nbsp;</th>
+                          <th>Hello</th>
+                     </tr>					 					 					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(135);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Owt</th>
+                          <th>&nbsp;</th>
+                          <th>Anything</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>P</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(136);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Parkin</th>
+                          <th>&nbsp;</th>
+                          <th>Ginger cake</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(137);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Parky</th>
+                          <th>&nbsp;</th>
+                          <th>Cold</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(138);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Parlour</th>
+                          <th>&nbsp;</th>
+                          <th>Lounge</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(139);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Pasty</th>
+                          <th>&nbsp;</th>
+                          <th>Effort</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(140);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Playing pop</th>
+                          <th>&nbsp;</th>
+                          <th>Telling off</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>Q</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(141);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Quacken</th>
+                          <th>&nbsp;</th>
+                          <th>To cure</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>R</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(142);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Real</th>
+                          <th>&nbsp;</th>
+                          <th>Outstanding</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(143);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Reckon</th>
+                          <th>&nbsp;</th>
+                          <th>Believe</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(144);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Reek</th>
+                          <th>&nbsp;</th>
+                          <th>Smell bad</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(145);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Reet</th>
+                          <th>&nbsp;</th>
+                          <th>Right</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(146);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Reight</th>
+                          <th>&nbsp;</th>
+                          <th>Very</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 				 					 					 					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+								
+				<table class="toptable">
+                <tr>
+                     <th>S</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(147);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Scullery</th>
+                          <th>&nbsp;</th>
+                          <th>Small kitchen</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(148);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sen</th>
+                          <th>&nbsp;</th>
+                          <th>Self</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(149);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sharp</th>
+                          <th>&nbsp;</th>
+                          <th>Quick</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(150);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sickened</th>
+                          <th>&nbsp;</th>
+                          <th>Upset</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(151);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Side</th>
+                          <th>&nbsp;</th>
+                          <th>Clear up</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(152);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sin</th>
+                          <th>&nbsp;</th>
+                          <th>Seen</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(153);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sitha</th>
+                          <th>&nbsp;</th>
+                          <th>Excuse me</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(154);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sithee</th>
+                          <th>&nbsp;</th>
+                          <th>'Don't you know' or Goodbye</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(155);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Skeg</th>
+                          <th>&nbsp;</th>
+                          <th>Glance</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(156);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Skint</th>
+                          <th>&nbsp;</th>
+                          <th>Broke</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(157);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Skoil</th>
+                          <th>&nbsp;</th>
+                          <th>School</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(158);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Skrike</th>
+                          <th>&nbsp;</th>
+                          <th>Scream</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(159);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Slack</th>
+                          <th>&nbsp;</th>
+                          <th>Slow (business)</th>
+                     </tr>					 					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(160);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Slart</th>
+                          <th>&nbsp;</th>
+                          <th>Splash</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(161);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sling</th>
+                          <th>&nbsp;</th>
+                          <th>Throw</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(162);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sling yer hook</th>
+                          <th>&nbsp;</th>
+                          <th>Go away</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(163);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sluffed</th>
+                          <th>&nbsp;</th>
+                          <th>Fed up</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(164);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Snap</th>
+                          <th>&nbsp;</th>
+                          <th>Lunch or light meal</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(165);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sneck</th>
+                          <th>&nbsp;</th>
+                          <th>Doorlatch</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(166);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Snicket</th>
+                          <th>&nbsp;</th>
+                          <th>Alleyway</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(167);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Spanish</th>
+                          <th>&nbsp;</th>
+                          <th>Liquourice</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(168);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Spell</th>
+                          <th>&nbsp;</th>
+                          <th>Splinter</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(169);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Spice or Spogs</th>
+                          <th>&nbsp;</th>
+                          <th>Sweets</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(170);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Stalled</th>
+                          <th>&nbsp;</th>
+                          <th>Bored</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(171);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Starved</th>
+                          <th>&nbsp;</th>
+                          <th>Hungry or Very cold</th>
+                     </tr>	
+                     <tr>
+					      <th><a onclick="app.playAudio(172);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Suited</th>
+                          <th>&nbsp;</th>
+                          <th>Pleased</th>
+                     </tr>					 				 
+                     <tr>
+					      <th><a onclick="app.playAudio(173);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Summat</th>
+                          <th>&nbsp;</th>
+                          <th>Something</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(174);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Sup</th>
+                          <th>&nbsp;</th>
+                          <th>Drink</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(175);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Syling down</th>
+                          <th>&nbsp;</th>
+                          <th>Raining heavily</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 					 
+                </table>
+				
+	    </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>T</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(176);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Taistril</th>
+                          <th>&nbsp;</th>
+                          <th>Reprobate</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(177);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Tarra</th>
+                          <th>&nbsp;</th>
+                          <th>Goodbye</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(178);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Teeming down</th>
+                          <th>&nbsp;</th>
+                          <th>Raining heavily</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(179);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Thee</th>
+                          <th>&nbsp;</th>
+                          <th>You</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(180);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Them</th>
+                          <th>&nbsp;</th>
+                          <th>Those</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(181);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Thi</th>
+                          <th>&nbsp;</th>
+                          <th>Your</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(182);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Think on</th>
+                          <th>&nbsp;</th>
+                          <th>Remember</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(183);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Thissen</th>
+                          <th>&nbsp;</th>
+                          <th>Yourself</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(184);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Thoil</th>
+                          <th>&nbsp;</th>
+                          <th>Not worth the price</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(185);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Thrang</th>
+                          <th>&nbsp;</th>
+                          <th>Very crowded</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(186);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Tow</th>
+                          <th>&nbsp;</th>
+                          <th>Work hard</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(187);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Twang</th>
+                          <th>&nbsp;</th>
+                          <th>Accent</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(188);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Tyke</th>
+                          <th>&nbsp;</th>
+                          <th>Yorkshireman</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>U</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(189);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Ummer</th>
+                          <th>&nbsp;</th>
+                          <th>Heck</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(190);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Us</th>
+                          <th>&nbsp;</th>
+                          <th>Me</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(191);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Usen</th>
+                          <th>&nbsp;</th>
+                          <th>Ourselves</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(192);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Utchup</th>
+                          <th>&nbsp;</th>
+                          <th>Make more room</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>V</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(193);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Vexed</th>
+                          <th>&nbsp;</th>
+                          <th>Angry</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>W</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(194);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Wag</th>
+                          <th>&nbsp;</th>
+                          <th>Play truant</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(195);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Wahrn</th>
+                          <th>&nbsp;</th>
+                          <th>Worse</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(196);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Wang</th>
+                          <th>&nbsp;</th>
+                          <th>Throw</th>
+                     </tr>					 					 
+                     <tr>
+					      <th><a onclick="app.playAudio(197);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Watter</th>
+                          <th>&nbsp;</th>
+                          <th>Water</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(198);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Wekken up</th>
+                          <th>&nbsp;</th>
+                          <th>Wake up</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(199);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>While</th>
+                          <th>&nbsp;</th>
+                          <th>Until</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>X</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>Y</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th><a onclick="app.playAudio(200);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Ye</th>
+                          <th>&nbsp;</th>
+                          <th>You</th>
+                     </tr>					 
+                     <tr>
+					      <th><a onclick="app.playAudio(201);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Yon</th>
+                          <th>&nbsp;</th>
+                          <th>That there</th>
+                     </tr>
+                     <tr>
+					      <th><a onclick="app.playAudio(202);"><img src="listen30x30.png"></a></th> 					 
+					      <th>&nbsp;</th>					 
+                          <th>Yonder</th>
+                          <th>&nbsp;</th>
+                          <th>That</th>
+                     </tr>					 
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>				
+		
+ 		<div class="page">
+		
+				<table class="toptable">
+                <tr>
+                     <th>Z</th>
+                </tr>
+                <tr>
+                     <td>&nbsp;</td>
+                </tr>
+
+                </table>
+                     <table class="maintable">
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>
+                     <tr>
+					      <th>&nbsp;</th> 
+					      <th>&nbsp;</th>					 
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                          <th>&nbsp;</th>
+                     </tr>					 
+                </table>
+        </div>
+
+
+
+
+
+
+
+
+		
+	</div>
+</div>
+
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+			// var media;
+			var audio=new Array(); 
+// audio[1.0] means letter A row 1
+// audio[3.2] means letter C row 3
+            audio[0]="/android_asset/www/mp3s/A1.mp3";  
+            audio[1]="/android_asset/www/mp3s/A2.mp3";  
+            audio[2]="/android_asset/www/mp3s/A3.mp3";  
+            audio[3]="/android_asset/www/mp3s/A4.mp3";  
+            audio[4]="/android_asset/www/mp3s/A5.mp3";  
+            audio[5]="/android_asset/www/mp3s/A6.mp3";  
+            audio[6]="/android_asset/www/mp3s/A7.mp3";  
+            audio[7]="/android_asset/www/mp3s/A8.mp3";  
+            audio[8]="/android_asset/www/mp3s/A9.mp3";  
+            audio[9]="/android_asset/www/mp3s/A10.mp3";  
+            audio[10]="/android_asset/www/mp3s/A11.mp3";  
+            audio[11]="/android_asset/www/mp3s/A12.mp3";  
+            audio[12]="/android_asset/www/mp3s/A13.mp3";  
+            audio[13]="/android_asset/www/mp3s/A14.mp3";  
+            audio[14]="/android_asset/www/mp3s/A15.mp3";  
+            audio[15]="/android_asset/www/mp3s/A16.mp3";
+            audio[16]="/android_asset/www/mp3s/A17.mp3";  
+            audio[17]="/android_asset/www/mp3s/A18.mp3";
+            audio[18]="/android_asset/www/mp3s/B1.mp3";  
+            audio[19]="/android_asset/www/mp3s/B2.mp3";  
+            audio[20]="/android_asset/www/mp3s/B3.mp3";  
+            audio[21]="/android_asset/www/mp3s/B4.mp3";  
+            audio[22]="/android_asset/www/mp3s/B5.mp3";  
+            audio[23]="/android_asset/www/mp3s/B6.mp3";  
+            audio[24]="/android_asset/www/mp3s/B7.mp3";  
+            audio[25]="/android_asset/www/mp3s/B8.mp3";  
+            audio[26]="/android_asset/www/mp3s/B9.mp3";  
+            audio[27]="/android_asset/www/mp3s/B10.mp3";  
+            audio[28]="/android_asset/www/mp3s/B11.mp3";  
+            audio[29]="/android_asset/www/mp3s/B12.mp3";  
+            audio[30]="/android_asset/www/mp3s/B13.mp3";  
+            audio[31]="/android_asset/www/mp3s/B14.mp3";  
+            audio[32]="/android_asset/www/mp3s/B15.mp3";  
+            audio[33]="/android_asset/www/mp3s/B16.mp3";
+            audio[34]="/android_asset/www/mp3s/C1.mp3";  
+            audio[35]="/android_asset/www/mp3s/C2.mp3";
+            audio[36]="/android_asset/www/mp3s/C3.mp3";  
+            audio[37]="/android_asset/www/mp3s/C4.mp3";
+            audio[38]="/android_asset/www/mp3s/C5.mp3";  
+            audio[39]="/android_asset/www/mp3s/C6.mp3";  
+            audio[40]="/android_asset/www/mp3s/C7.mp3";  
+            audio[41]="/android_asset/www/mp3s/C8.mp3";  
+            audio[42]="/android_asset/www/mp3s/C9.mp3";  
+            audio[43]="/android_asset/www/mp3s/C10.mp3";  
+            audio[44]="/android_asset/www/mp3s/C11.mp3";  
+            audio[45]="/android_asset/www/mp3s/C12.mp3";  
+            audio[46]="/android_asset/www/mp3s/C13.mp3";  
+            audio[47]="/android_asset/www/mp3s/C14.mp3";  
+            audio[48]="/android_asset/www/mp3s/C15.mp3";  
+            audio[49]="/android_asset/www/mp3s/D1.mp3";  
+            audio[50]="/android_asset/www/mp3s/D2.mp3";  
+            audio[51]="/android_asset/www/mp3s/D3.mp3";  
+            audio[52]="/android_asset/www/mp3s/D4.mp3";  
+            audio[53]="/android_asset/www/mp3s/D5.mp3";
+            audio[54]="/android_asset/www/mp3s/D6.mp3";  
+            audio[55]="/android_asset/www/mp3s/D7.mp3";
+            audio[56]="/android_asset/www/mp3s/D8.mp3";  
+            audio[57]="/android_asset/www/mp3s/D9.mp3";
+            audio[58]="/android_asset/www/mp3s/D10.mp3";  
+            audio[59]="/android_asset/www/mp3s/E1.mp3";  
+            audio[60]="/android_asset/www/mp3s/E2.mp3";  
+            audio[61]="/android_asset/www/mp3s/F1.mp3";  
+            audio[62]="/android_asset/www/mp3s/F2.mp3";
+            audio[63]="/android_asset/www/mp3s/F3.mp3";  
+            audio[64]="/android_asset/www/mp3s/F4.mp3";  
+            audio[65]="/android_asset/www/mp3s/F5.mp3";  
+            audio[66]="/android_asset/www/mp3s/F6.mp3";  
+            audio[67]="/android_asset/www/mp3s/F7.mp3";  
+            audio[68]="/android_asset/www/mp3s/F8.mp3";  
+            audio[69]="/android_asset/www/mp3s/F9.mp3";  
+            audio[70]="/android_asset/www/mp3s/F10.mp3";  
+            audio[71]="/android_asset/www/mp3s/F11.mp3";  
+            audio[72]="/android_asset/www/mp3s/F12.mp3";  
+            audio[73]="/android_asset/www/mp3s/F13.mp3";
+            audio[74]="/android_asset/www/mp3s/F14.mp3";  
+            audio[75]="/android_asset/www/mp3s/F15.mp3";
+            audio[76]="/android_asset/www/mp3s/F16.mp3";  
+            audio[77]="/android_asset/www/mp3s/G1.mp3";
+            audio[78]="/android_asset/www/mp3s/G2.mp3";  
+            audio[79]="/android_asset/www/mp3s/G3.mp3";  
+            audio[80]="/android_asset/www/mp3s/G4.mp3";  
+            audio[81]="/android_asset/www/mp3s/G5.mp3";  
+            audio[82]="/android_asset/www/mp3s/G6.mp3";
+            audio[83]="/android_asset/www/mp3s/G7.mp3";  
+            audio[84]="/android_asset/www/mp3s/G8.mp3";  
+            audio[85]="/android_asset/www/mp3s/G9.mp3";  
+            audio[86]="/android_asset/www/mp3s/G10.mp3";  
+            audio[87]="/android_asset/www/mp3s/G11.mp3";  
+            audio[88]="/android_asset/www/mp3s/G12.mp3";  
+            audio[89]="/android_asset/www/mp3s/G13.mp3";  
+            audio[90]="/android_asset/www/mp3s/G14.mp3";  
+            audio[91]="/android_asset/www/mp3s/G15.mp3";  
+            audio[92]="/android_asset/www/mp3s/G16.mp3"; 
+            audio[93]="/android_asset/www/mp3s/EXTRA1.mp3"; 
+            audio[94]="/android_asset/www/mp3s/J1.mp3";  
+            audio[95]="/android_asset/www/mp3s/J2.mp3";  
+            audio[96]="/android_asset/www/mp3s/J3.mp3";  
+            audio[97]="/android_asset/www/mp3s/K1.mp3";  
+            audio[98]="/android_asset/www/mp3s/L1.mp3";  
+            audio[99]="/android_asset/www/mp3s/L2.mp3";  
+            audio[100]="/android_asset/www/mp3s/L3.mp3";  
+            audio[101]="/android_asset/www/mp3s/L4.mp3";  
+            audio[102]="/android_asset/www/mp3s/L5.mp3"; 
+            audio[103]="/android_asset/www/mp3s/L6.mp3";  
+            audio[104]="/android_asset/www/mp3s/L7.mp3";  
+            audio[105]="/android_asset/www/mp3s/L8.mp3";  
+            audio[106]="/android_asset/www/mp3s/M1.mp3";  
+            audio[107]="/android_asset/www/mp3s/M2.mp3";  
+            audio[108]="/android_asset/www/mp3s/M3.mp3";  
+            audio[109]="/android_asset/www/mp3s/M4.mp3";  
+            audio[110]="/android_asset/www/mp3s/M5.mp3";  
+            audio[111]="/android_asset/www/mp3s/M6.mp3";  
+            audio[112]="/android_asset/www/mp3s/M7.mp3"; 
+            audio[113]="/android_asset/www/mp3s/M8.mp3";  
+            audio[114]="/android_asset/www/mp3s/M9.mp3";  
+            audio[115]="/android_asset/www/mp3s/M10.mp3";  
+            audio[116]="/android_asset/www/mp3s/M11.mp3";  
+            audio[117]="/android_asset/www/mp3s/M12.mp3";  
+            audio[118]="/android_asset/www/mp3s/M13.mp3";  
+            audio[119]="/android_asset/www/mp3s/M14.mp3";  
+            audio[120]="/android_asset/www/mp3s/M15.mp3";  
+            audio[121]="/android_asset/www/mp3s/M16.mp3";  
+            audio[122]="/android_asset/www/mp3s/N1.mp3"; 
+            audio[123]="/android_asset/www/mp3s/N2.mp3";  
+            audio[124]="/android_asset/www/mp3s/N3.mp3";  
+            audio[125]="/android_asset/www/mp3s/N4.mp3";  
+            audio[126]="/android_asset/www/mp3s/N5.mp3";  
+            audio[127]="/android_asset/www/mp3s/N6.mp3";  
+            audio[128]="/android_asset/www/mp3s/N7.mp3";  
+            audio[129]="/android_asset/www/mp3s/O1.mp3";  
+            audio[130]="/android_asset/www/mp3s/O2.mp3";  
+            audio[131]="/android_asset/www/mp3s/O3.mp3";  
+            audio[132]="/android_asset/www/mp3s/O4.mp3"; 
+            audio[133]="/android_asset/www/mp3s/O5.mp3";  
+            audio[134]="/android_asset/www/mp3s/O6.mp3";  
+            audio[135]="/android_asset/www/mp3s/O7.mp3";  
+            audio[136]="/android_asset/www/mp3s/P1.mp3";  
+            audio[137]="/android_asset/www/mp3s/P2.mp3";  
+            audio[138]="/android_asset/www/mp3s/P3.mp3";  
+            audio[139]="/android_asset/www/mp3s/P4.mp3";  
+            audio[140]="/android_asset/www/mp3s/P5.mp3";  
+            audio[141]="/android_asset/www/mp3s/Q1.mp3";  
+            audio[142]="/android_asset/www/mp3s/R1.mp3"; 
+            audio[143]="/android_asset/www/mp3s/R2.mp3";  
+            audio[144]="/android_asset/www/mp3s/R3.mp3";  
+            audio[145]="/android_asset/www/mp3s/R4.mp3";  
+            audio[146]="/android_asset/www/mp3s/R5.mp3";  
+            audio[147]="/android_asset/www/mp3s/S1.mp3";  
+            audio[148]="/android_asset/www/mp3s/S2.mp3";  
+            audio[149]="/android_asset/www/mp3s/S3.mp3";  
+            audio[150]="/android_asset/www/mp3s/S4.mp3";  
+            audio[151]="/android_asset/www/mp3s/S5.mp3";  
+            audio[152]="/android_asset/www/mp3s/S6.mp3"; 
+            audio[153]="/android_asset/www/mp3s/S7.mp3";  
+            audio[154]="/android_asset/www/mp3s/S8.mp3";  
+            audio[155]="/android_asset/www/mp3s/S9.mp3";  
+            audio[156]="/android_asset/www/mp3s/S10.mp3";  
+            audio[157]="/android_asset/www/mp3s/S11.mp3";  
+            audio[158]="/android_asset/www/mp3s/S12.mp3";  
+            audio[159]="/android_asset/www/mp3s/S13.mp3";  
+            audio[160]="/android_asset/www/mp3s/S14.mp3";  
+            audio[161]="/android_asset/www/mp3s/S15.mp3";  
+            audio[162]="/android_asset/www/mp3s/S16.mp3"; 
+            audio[163]="/android_asset/www/mp3s/S17.mp3";  
+            audio[164]="/android_asset/www/mp3s/S18.mp3";  
+            audio[165]="/android_asset/www/mp3s/S19.mp3";  
+            audio[166]="/android_asset/www/mp3s/S20.mp3";  
+            audio[167]="/android_asset/www/mp3s/S21.mp3";  
+            audio[168]="/android_asset/www/mp3s/S22.mp3";  
+            audio[169]="/android_asset/www/mp3s/S23.mp3";  
+            audio[170]="/android_asset/www/mp3s/S24.mp3";  
+            audio[171]="/android_asset/www/mp3s/S25.mp3"; 
+            audio[172]="/android_asset/www/mp3s/S26.mp3"; 
+            audio[173]="/android_asset/www/mp3s/S27.mp3";  
+            audio[174]="/android_asset/www/mp3s/S28.mp3";  
+            audio[175]="/android_asset/www/mp3s/S29.mp3";  
+            audio[176]="/android_asset/www/mp3s/T1.mp3";  
+            audio[177]="/android_asset/www/mp3s/T2.mp3";  
+            audio[178]="/android_asset/www/mp3s/T3.mp3";  
+            audio[179]="/android_asset/www/mp3s/T4.mp3";  
+            audio[180]="/android_asset/www/mp3s/T5.mp3";  
+            audio[181]="/android_asset/www/mp3s/T6.mp3"; 									
+            audio[182]="/android_asset/www/mp3s/T7.mp3"; 
+            audio[183]="/android_asset/www/mp3s/T8.mp3";  
+            audio[184]="/android_asset/www/mp3s/T9.mp3";  
+            audio[185]="/android_asset/www/mp3s/T10.mp3";  
+            audio[186]="/android_asset/www/mp3s/T11.mp3";  
+            audio[187]="/android_asset/www/mp3s/T12.mp3";  
+            audio[188]="/android_asset/www/mp3s/T13.mp3";  
+            audio[189]="/android_asset/www/mp3s/U1.mp3";  
+            audio[190]="/android_asset/www/mp3s/U2.mp3";  
+            audio[191]="/android_asset/www/mp3s/U3.mp3"; 												
+            audio[192]="/android_asset/www/mp3s/U4.mp3"; 
+            audio[193]="/android_asset/www/mp3s/V1.mp3"; 			
+            audio[194]="/android_asset/www/mp3s/W1.mp3";  
+            audio[195]="/android_asset/www/mp3s/W2.mp3";  
+            audio[196]="/android_asset/www/mp3s/W3.mp3";  
+            audio[197]="/android_asset/www/mp3s/W4.mp3";  
+            audio[198]="/android_asset/www/mp3s/W5.mp3";  
+            audio[199]="/android_asset/www/mp3s/W6.mp3";  
+            audio[200]="/android_asset/www/mp3s/EXTRA2.mp3"; 
+            audio[201]="/android_asset/www/mp3s/Y2.mp3";  
+            audio[202]="/android_asset/www/mp3s/Y3.mp3";  			
+
+																																																
+        </script>
+		
+<style>
+    .toptable { width: 90%; margin-left:5%; margin-right:5%; border: 0px; }
+ //   .toptable th { text-align:left; font-size: 75px; font-weight: bolder; padding: 5px; border: 0px; }
+    .toptable th { text-align:left; font-size: 70px; font-weight: bolder; border: 0px; } 
+</style>
+
+<style>
+    .maintable { width: 100%; border: 0px; }
+    .maintable th { width:10%; text-align:left; font-size: medium; padding: 5px; border: 0px; }	
+    .maintable th + th { width:1%; font-size: medium; padding: 5px; border: 0px; }
+    .maintable th + th + th { width:37%; text-align:left; font-size: medium; padding: 5px; border: 0px; }
+    .maintable th + th + th +th { width:1%; font-size: medium; padding: 5px; border: 0px; }
+    .maintable th + th + th +th +th { width:51%; text-align:left; font-size: medium; padding: 5px; border: 0px; }	
+</style>
+
+</body>
+</html>
