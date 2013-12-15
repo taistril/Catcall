@@ -55,6 +55,20 @@ body {
 
 p { margin-bottom:1.2em; }
 
+
+//@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+//  /* iPhone, Android rules here */
+//}
+
+
+@media only screen and (max-device-width: 600px) and (orientation: portrait)  {
+  /* iPhone, Android rules here */
+	#wrapper {
+		width:300px !important;
+	}  
+}
+
+
 @media only screen and (orientation: landscape) {
 	#wrapper {
 		width:1024px !important;
