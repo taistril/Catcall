@@ -64,7 +64,7 @@ p { margin-bottom:1.2em; }
 @media only screen  {
   /* iPhone, Android rules here */
 	#wrapper {
-		width:270px !important;
+		width:540px !important;
 	}  
 	#slider {
 //		width:4096px !important;
@@ -72,14 +72,8 @@ p { margin-bottom:1.2em; }
 	}
 	
 	.scrollerwrapper {
-		width:270px !important;
+		width:540px !important;
 	}	
-//        .page {
-//        	width:270px !important;
-//        }	
-	body {
-		font-size:10px;
-        }
 }
 
 
