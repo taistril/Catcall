@@ -61,7 +61,7 @@ p { margin-bottom:1.2em; }
 //}
 
 
-@media only screen and (max-device-width: 600px) and (orientation: portrait)  {
+@media only screen and (max-device-width: 1024px) and (orientation: portrait)  {
   /* iPhone, Android rules here */
 	#wrapper {
 		width:300px !important;
