@@ -64,19 +64,23 @@ p { margin-bottom:1.2em; }
 @media only screen and (orientation: portrait)  {
   /* iPhone, Android rules here */
 	#wrapper {
-		width:280px !important;
+		width:270px !important;
 	}  
 	#slider {
 //		width:4096px !important;
-		width:8400px !important;
+		width:8100px !important;
 	}
 	
 	.scrollerwrapper {
-		width:280px !important;
+		width:270px !important;
 	}	
 //        .page {
-//        	width:280px !important;
+//        	width:270px !important;
 //        }	
+	body {
+		font-size:10px;
+        }
+
 }
 
 
