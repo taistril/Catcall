@@ -67,16 +67,15 @@ p { margin-bottom:1.2em; }
 		width:600px !important;
 	}  
 	#slider {
-//		width:4096px !important;
 		width:18000px !important;
 	}
 	
 	.scrollerwrapper {
 		width:6000px !important;
 	}	
-//	.page {
-//		width:300px !important;
-//	}	
+	.page {
+		width:150px !important;
+	}	
 }
 
 
