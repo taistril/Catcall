@@ -61,7 +61,7 @@ p { margin-bottom:1.2em; }
 //}
 
 
-@media only screen and (min-device-width: 480px) and (orientation: portrait) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 600px) and (orientation: portrait) {
   /* iPhone, Android rules here */
 	#wrapper {
 		width:600px !important;
@@ -74,7 +74,24 @@ p { margin-bottom:1.2em; }
 		width:600px !important;
 	}	
 	.page {
-		width:320px !important;
+		width:300px !important;
+	}	
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {
+  /* iPhone, Android rules here */
+	#wrapper {
+		width:800px !important;
+	}  
+	#slider {
+		width:24000px !important;
+	}
+	
+	.scrollerwrapper {
+		width:800px !important;
+	}	
+	.page {
+		width:400px !important;
 	}	
 }
 
