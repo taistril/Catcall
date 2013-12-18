@@ -64,14 +64,14 @@ p { margin-bottom:1.2em; }
 @media only screen and (min-device-width: 480px) and (orientation: portrait) {
   /* iPhone, Android rules here */
 	#wrapper {
-		width:480px !important;
+		width:600px !important;
 	}  
 	#slider {
 		width:18000px !important;
 	}
 	
 	.scrollerwrapper {
-		width:480px !important;
+		width:600px !important;
 	}	
 	.page {
 		width:320px !important;
