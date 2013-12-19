@@ -65,10 +65,10 @@ Roy Ellwood
 <gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
 <gap:splash src="splash/ios/Default.png" width="320" height="480" />
 <gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" />
-<gap:splash src="splash/android/splash320x427.9.png" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="splash/android/splash320x427.9.png" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="splash/android/splash320x427.9.png" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="splash/android/splash320x427.9.png" gap:platform="android" gap:density="xhdpi" />
+<gap:splash src="splash/android/splash320x426.9.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="splash/android/splash320x426.9.png" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="splash/android/splash320x426.9.png" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="splash/android/splash320x426.9.png" gap:platform="android" gap:density="xhdpi" />
 <gap:splash src="splash/bb/splash.png" gap:platform="blackberry" />
 <gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
 
