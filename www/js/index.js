@@ -89,27 +89,27 @@ var app = {
       
       var my_media = null;
 
-var last_click_time = new Date().getTime();
+//var last_click_time = new Date().getTime();
 
-$("a").live("click", function(ev) {
+//$("a").live("click", function(ev) {
 
-	var click_time = ev["timeStamp"];
+//	var click_time = ev["timeStamp"];
 
-	if (click_time && (click_time - last_click_time) < 1000) {
+//	if (click_time && (click_time - last_click_time) < 1000) {
 
-		ev.stopImmediatePropagation();
+//		ev.stopImmediatePropagation();
 
-		return false;
+//		return false;
 
-	}    
+//	}    
 
-	last_click_x = click_x;
+//	last_click_x = click_x;
 
-	last_click_y = click_y;
+//	last_click_y = click_y;
 
-	last_click_time = click_time;
+//	last_click_time = click_time;
 
-});
+//});
 
       
       
