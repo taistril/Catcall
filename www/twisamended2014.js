@@ -292,6 +292,43 @@ TWIS.prototype = {
 				// Find the last touched element
 				target = point.target;
 				while (target.nodeType != 1) target = target.parentNode;
+				
+				
+				
+                                 /* *********************************************************************************************
+                                  * This piece of code was added to fix the android Jelly Bean issue of click events firing twice.  To temporarily fix this issue
+                                  * we want to also check for HTML Buttons and anchors before creating the click events.
+                                  * NOTE: This fix couples iScroll with Phonegap libraries and should be removed as soon as a patch is released by iScroll.
+                                  * see https://github.com/cubiq/iscroll/pull/274 for more info
+                                  * 
+                                  * Devin Jett
+                                  */
+                                  var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');
+                                  if(window.device != null && window.device.platform == "Android"){
+                                  //parse out dots so we can compare to earliest Jelly Bean version (410 without dots)
+                                  var version = window.device.version.replace(/\./g,"");
+
+                                    if(parseInt(version) >= 410){
+                                      isTagNameOk = (isTagNameOk && target.tagName != 'BUTTON' && target.tagName != 'A');
+                                    }
+                                  } 			
+				
+								
+                                 if (isTagNameOk) {
+                                     ev = doc.createEvent('MouseEvents');
+                                     ev.initMouseEvent('click', true, true, e.view, 1,
+                                     point.screenX, point.screenY, point.clientX, point.clientY,
+                                     e.ctrlKey, e.altKey, e.shiftKey, e.metaKey,
+                                     0, null);
+                                     ev._fake = true;
+                                     target.dispatchEvent(ev);
+                                 }				
+				
+                                 /* ***************************************************************************************
+                                  */				
+				
+				
+				
 
 				if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA') {
 					ev = document.createEvent('MouseEvents');
