@@ -304,8 +304,10 @@ TWIS.prototype = {
                                   * Devin Jett
                                   */
                                   
+                                  
+                                  windowdeviceP.innerHTML="window.device=" + window.device;
 
-                                  windowdeviceplatformP.innerHTML="testing 123";
+                                  windowdeviceplatformP.innerHTML="window.device.platform=" + window.device.platform;
 
                                   
                                   var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');
