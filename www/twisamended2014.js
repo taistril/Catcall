@@ -304,9 +304,7 @@ TWIS.prototype = {
                                   * Devin Jett
                                   */
                                   
-                                  var windowdeviceP=document.getElementById("windowdevice")
 
-                                  windowdeviceP.innerHTML="window.device=" + window.device;
 
                                   
                                   var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');

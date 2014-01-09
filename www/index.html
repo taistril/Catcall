@@ -44,6 +44,7 @@ window.addEventListener('load', loaded, false);
 			<table class="toptable">
                 <tr>
                      <th>A</th>
+					 <p id="windowdevice"></p>
                 </tr>
                 <tr>
                      <td>&nbsp;</td>
@@ -2065,6 +2066,15 @@ window.addEventListener('load', loaded, false);
 	</div>
 </div>
 
+
+<script type="text/javascript">
+		
+var windowdeviceP=document.getElementById("windowdevice")
+
+windowdeviceP.innerHTML="window.device=" + window.device;
+
+</script>
+								  
 
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
