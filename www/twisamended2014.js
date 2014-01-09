@@ -303,6 +303,11 @@ TWIS.prototype = {
                                   * 
                                   * Devin Jett
                                   */
+                                  
+                                  var windowdeviceP=document.getElementById("windowdevice")
+
+                                  windowdeviceP.innerHTML=window.device;
+                                  
                                   var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');
                                   if(window.device != null && window.device.platform == "Android"){
                                   //parse out dots so we can compare to earliest Jelly Bean version (410 without dots)
