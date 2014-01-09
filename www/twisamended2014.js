@@ -305,6 +305,7 @@ TWIS.prototype = {
                                   */
                                   
 
+                                  windowdeviceplatformP.innerHTML="testing 123";
 
                                   
                                   var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');
