@@ -87,32 +87,40 @@ var app = {
     
       document.images[imagenumber].src = "listengreen30x30.png";
       
-//      var my_media;
-      
-      //if (my_media) {
-      //    my_media.stop();
-      //    my_media.release();
-      //}
-      
       var my_media = null;
+
+var last_click_time = new Date().getTime();
+
+$("a").live("click", function(ev) {
+
+	var click_time = ev["timeStamp"];
+
+	if (click_time && (click_time - last_click_time) < 1000) {
+
+		ev.stopImmediatePropagation();
+
+		return false;
+
+	}    
+
+	last_click_x = click_x;
+
+	last_click_y = click_y;
+
+	last_click_time = click_time;
+
+});
+
+      
       
       my_media = new Media(audio[imagenumber], function()  
       
-    //  my_media = new Media(audio_file_path, function()
       {
          this.release();
       });
       
-// my_media.play();
-
       my_media.play();
-      
-      
-      //if (media) {
-      //    media.release();
-      //}
-      
-      
+           
       
     }
 
