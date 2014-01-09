@@ -3,30 +3,6 @@
  * Released under MIT license, http://cubiq.org/license
  */
 
-
-var last_click_time = new Date().getTime();
-
-$("a").live("click", function(ev) {
-
-	var click_time = ev["timeStamp"];
-
-	if (click_time && (click_time - last_click_time) < 1000) {
-
-		ev.stopImmediatePropagation();
-
-		return false;
-
-	}    
-
-	last_click_x = click_x;
-
-	last_click_y = click_y;
-
-	last_click_time = click_time;
-
-});
-
-
 (function(){
 var m = Math,
 	vendor = (/webkit/i).test(navigator.appVersion) ? 'webkit' :
@@ -329,31 +305,31 @@ TWIS.prototype = {
                                   */
                                   
                                   
-                              //    windowdeviceP.innerHTML="window.device=" + window.device;
+                                  windowdeviceP.innerHTML="window.device=" + window.device;
 
-                              //    windowdeviceplatformP.innerHTML="window.device.platform=" + window.device.platform;
+                                  windowdeviceplatformP.innerHTML="window.device.platform=" + window.device.platform;
 
                                   
-                              //    var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');
-                              //    if(window.device != null && window.device.platform == "Android"){
-                              //    //parse out dots so we can compare to earliest Jelly Bean version (410 without dots)
-                              //    var version = window.device.version.replace(/\./g,"");
+                                  var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');
+                                  if(window.device != null && window.device.platform == "Android"){
+                                  //parse out dots so we can compare to earliest Jelly Bean version (410 without dots)
+                                  var version = window.device.version.replace(/\./g,"");
 
-                              //      if(parseInt(version) >= 410){
-                              //        isTagNameOk = (isTagNameOk && target.tagName != 'BUTTON' && target.tagName != 'A');
-                              //      }
-                              //    } 			
+                                    if(parseInt(version) >= 410){
+                                      isTagNameOk = (isTagNameOk && target.tagName != 'BUTTON' && target.tagName != 'A');
+                                    }
+                                  } 			
 				
 								
-                              //   if (isTagNameOk) {
-                              //       ev = doc.createEvent('MouseEvents');
-                              //       ev.initMouseEvent('click', true, true, e.view, 1,
-                              //       point.screenX, point.screenY, point.clientX, point.clientY,
-                              //       e.ctrlKey, e.altKey, e.shiftKey, e.metaKey,
-                              //       0, null);
-                              //       ev._fake = true;
-                              //       target.dispatchEvent(ev);
-                              //   }				
+                                 if (isTagNameOk) {
+                                     ev = doc.createEvent('MouseEvents');
+                                     ev.initMouseEvent('click', true, true, e.view, 1,
+                                     point.screenX, point.screenY, point.clientX, point.clientY,
+                                     e.ctrlKey, e.altKey, e.shiftKey, e.metaKey,
+                                     0, null);
+                                     ev._fake = true;
+                                     target.dispatchEvent(ev);
+                                 }				
 				
                                  /* ***************************************************************************************
                                   */				
