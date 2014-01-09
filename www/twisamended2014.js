@@ -306,7 +306,8 @@ TWIS.prototype = {
                                   
                                   var windowdeviceP=document.getElementById("windowdevice")
 
-                                  windowdeviceP.innerHTML=window.device;
+                                  windowdeviceP.innerHTML="window.device=" + window.device;
+
                                   
                                   var isTagNameOk = (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA');
                                   if(window.device != null && window.device.platform == "Android"){
