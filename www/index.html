@@ -34,7 +34,7 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 window.addEventListener('load', loaded, false);
 
 
-function playA(image,audio) {
+function playA() {
  
   //    document.images[image].src = "listengreen30x30.png";
 	  
@@ -70,8 +70,8 @@ function playA(image,audio) {
             </table>
                   
 			   <table class="maintable">
-                     <tr>
-					      <th><a onclick="playA(0, '/android_asset/www/mp3s/A1.mp3');"><img src="listen30x30.png"></a></th> 										
+                     <tr> 
+					      <th><a onclick="playA();"><img src="listen30x30.png"></a></th> 										
 						  <th>&nbsp;</th> 						  					 
 					      <th>Abide</th> 
 						  <th>&nbsp;</th> 
