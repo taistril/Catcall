@@ -32,6 +32,23 @@ function loaded() {
 }
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 window.addEventListener('load', loaded, false);
+
+
+function playA(image,audio) {
+ 
+      document.images[image].src = "listengreen30x30.png";
+
+      my_media = new Media(audio);
+      my_media.play();
+      delete my_media;
+
+	}
+}
+
+
+
+
+
 </script>
 
 </head>
@@ -87,7 +104,7 @@ window.addEventListener('load', loaded, false);
 						  <th>Empty headed</th> 
                      </tr>					 					 					 					 
                      <tr>
-					      <th><a onclick="app.playAudio(5);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playA(5, '/android_asset/www/mp3s/A6.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
 					      <th>Afower</th> 
 						  <th>&nbsp;</th> 
