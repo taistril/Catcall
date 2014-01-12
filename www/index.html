@@ -33,63 +33,25 @@ function loaded() {
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 window.addEventListener('load', loaded, false);
-var prev_gap_time = new Date().getTime();
 var this_click_time = new Date().getTime();
 var prev_click_time = new Date().getTime();
 var gap_time = new Date().getTime();
-//document.getElementById("prevgaptime2").innerHTML=prev_click_time;
-//document.getElementById("gaptime2").innerHTML=this_click_time;
 
-function playA(image, audio) {
+function playtheaudio(image, audio) {
  
 this_click_time = new Date().getTime();
 
-
-//document.getElementById("prevclicktime2").innerHTML=prev_gap_time;
-
-
 gap_time=this_click_time-prev_click_time; 
- 
-//document.getElementById("gaptime2").innerHTML=gap_time;
-//document.getElementById("prevgaptime2").innerHTML=prev_gap_time;
- 
  
     if (gap_time > 1000) {
       document.images[image].src = "listengreen30x30.png";
-	  
-      my_media = new Media(audio);
+	  my_media = new Media(audio);
       my_media.play();
       delete my_media;
 	}
-	  prev_click_time=this_click_time;
-	  prev_gap_time=gap_time;	  
-
 	
+	  prev_click_time=this_click_time;
 }
-
-//var last_click_time = new Date().getTime();
-
-//$("a").live("click", function(ev) {
-
-//	var click_time = ev["timeStamp"];
-
-//	if (click_time && (click_time - last_click_time) < 1000) {
-
-//		ev.stopImmediatePropagation();
-
-//		return false;
-
-//	}    
-
-//	last_click_x = click_x;
-
-//	last_click_y = click_y;
-
-//	last_click_time = click_time;
-
-//});
-
-
 
 </script>
 
@@ -111,126 +73,126 @@ gap_time=this_click_time-prev_click_time;
                   
 			   <table class="maintable">
                      <tr> 
-					      <th><a onclick="playA(0, '/android_asset/www/mp3s/A1.mp3');"><img src="listen30x30.png"></a></th> 										
+					      <th><a onclick="playtheaudio(0, '/android_asset/www/mp3s/A1.mp3');"><img src="listen30x30.png"></a></th> 										
 						  <th>&nbsp;</th> 						  					 
 					      <th>Abide</th> 
 						  <th>&nbsp;</th> 
 						  <th>Bear</th> 
                      </tr>
                      <tr>
-					      <th><a onclick="playA(1, '/android_asset/www/mp3s/A2.mp3');"><img src="listen30x30.png"></a></th> 										 
+					      <th><a onclick="playtheaudio(1, '/android_asset/www/mp3s/A2.mp3');"><img src="listen30x30.png"></a></th> 										 
 					      <th>&nbsp;</th>
 					      <th>Aboon</th> 
 						  <th>&nbsp;</th> 
 						  <th>Above</th> 
                      </tr>
                      <tr>
-					      <th><a onclick="playA(2, '/android_asset/www/mp3s/A3.mp3');"><img src="listen30x30.png"></a></th> 										 
+					      <th><a onclick="playtheaudio(2, '/android_asset/www/mp3s/A3.mp3');"><img src="listen30x30.png"></a></th> 										 
 					      <th>&nbsp;</th>					 
 					      <th>Ackle</th> 
 						  <th>&nbsp;</th> 
 						  <th>Work as intended</th> 
                      </tr>					 
                      <tr>
-					      <th><a onclick="playA(3, '/android_asset/www/mp3s/A4.mp3');"><img src="listen30x30.png"></a></th> 										 
+					      <th><a onclick="playtheaudio(3, '/android_asset/www/mp3s/A4.mp3');"><img src="listen30x30.png"></a></th> 										 
 					      <th>&nbsp;</th>					 
 					      <th>Addle</th> 
 						  <th>&nbsp;</th> 
 						  <th>Earn by labour</th> 
                      </tr>
                      <tr>
-					      <th><a onclick="playA(4, '/android_asset/www/mp3s/A5.mp3');"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(4, '/android_asset/www/mp3s/A5.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
 					      <th>Addled</th> 
 						  <th>&nbsp;</th> 
 						  <th>Empty headed</th> 
                      </tr>					 					 					 					 
                      <tr>
-					      <th><a onclick="playA(5, '/android_asset/www/mp3s/A6.mp3');"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(5, '/android_asset/www/mp3s/A6.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
 					      <th>Afower</th> 
 						  <th>&nbsp;</th> 
 						  <th>Before</th> 
                      </tr>
                      <tr>
-					      <th><a onclick="app.playAudio(6);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(6, '/android_asset/www/mp3s/A7.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
 					      <th>Agen</th> 
 						  <th>&nbsp;</th> 
 						  <th>Again</th> 
                      </tr>
                      <tr>
-					      <th><a onclick="app.playAudio(7);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(7, '/android_asset/www/mp3s/A8.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
 					      <th>Ah</th> 
 						  <th>&nbsp;</th> 
 						  <th>I</th> 
                      </tr>					 					 
                      <tr>
-					      <th><a onclick="app.playAudio(8);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(8, '/android_asset/www/mp3s/A9.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
 					      <th>Aht</th> 
 						  <th>&nbsp;</th> 
 						  <th>Outside</th> 
                      </tr>
                      <tr>
-					      <th><a onclick="app.playAudio(9);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(9, '/android_asset/www/mp3s/A10.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
                           <th>Allus</th>
                           <th>&nbsp;</th>
                           <th>Always</th>
                      </tr>					 					 					 
                      <tr>
-					      <th><a onclick="app.playAudio(10);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(10, '/android_asset/www/mp3s/A11.mp3');"><img src="listen30x30.png"></a></th> 					 
 					      <th>&nbsp;</th>					 
                           <th>Anall</th>
                           <th>&nbsp;</th>
                           <th>As well</th>
                      </tr>
                      <tr>
-					      <th><a onclick="app.playAudio(11);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(11, '/android_asset/www/mp3s/A12.mp3');"><img src="listen30x30.png"></a></th> 
 					      <th>&nbsp;</th>					 
 					      <th>Apeth</th> 
 						  <th>&nbsp;</th> 
 						  <th>Halfpenny worth</th> 
                      </tr>					 				 
                      <tr>
-					      <th><a onclick="app.playAudio(12);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(12, '/android_asset/www/mp3s/A13.mp3');"><img src="listen30x30.png"></a></th>  
 					      <th>&nbsp;</th>					 
                           <th>Appen</th>
                           <th>&nbsp;</th>
                           <th>Maybe</th>
                      </tr>
                      <tr>
-					      <th><a onclick="app.playAudio(13);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(13, '/android_asset/www/mp3s/A14.mp3');"><img src="listen30x30.png"></a></th>  
 					      <th>&nbsp;</th>					 
                           <th>Ard on</th>
                           <th>&nbsp;</th>
                           <th>Asleep</th>
                      </tr>					 
                      <tr>
-					      <th><a onclick="app.playAudio(14);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(14, '/android_asset/www/mp3s/A15.mp3');"><img src="listen30x30.png"></a></th>  
 					      <th>&nbsp;</th>					 
                           <th>Arf baked</th>
                           <th>&nbsp;</th>
                           <th>Silly</th>
                      </tr>
                      <tr>
-					      <th><a onclick="app.playAudio(15);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(15, '/android_asset/www/mp3s/A16.mp3');"><img src="listen30x30.png"></a></th>  
 					      <th>&nbsp;</th>					 
 					      <th>As Ta</th> 
 						  <th>&nbsp;</th> 
 						  <th>Have you</th> 
                      </tr>					 
                      <tr>
-					      <th><a onclick="app.playAudio(16);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(16, '/android_asset/www/mp3s/A17.mp3');"><img src="listen30x30.png"></a></th>  
 					      <th>&nbsp;</th>					 
                           <th>Aye</th>
                           <th>&nbsp;</th>
                           <th>Yes</th>
                      </tr>
                      <tr>
-					      <th><a onclick="app.playAudio(17);"><img src="listen30x30.png"></a></th> 					 
+					      <th><a onclick="playtheaudio(17, '/android_asset/www/mp3s/A18.mp3');"><img src="listen30x30.png"></a></th>  
 					      <th>&nbsp;</th>					 
 					      <th>Ay Up</th> 
 						  <th>&nbsp;</th> 
