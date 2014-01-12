@@ -34,14 +34,18 @@ function loaded() {
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 window.addEventListener('load', loaded, false);
 var first_click_time = new Date().getTime();
-var next_click_time = new Date().getTime();
-document.getElementById("initialclicktime2").innerHTML=first_click_time;
-document.getElementById("nextclicktime2").innerHTML=next_click_time;
+var this_click_time = new Date().getTime();
+var prev_click_time = new Date().getTime();
+document.getElementById("prevclicktime2").innerHTML=prev_click_time;
+document.getElementById("thisclicktime2").innerHTML=this_click_time;
 
 function playA(image, audio) {
  
-next_click_time = new Date().getTime();
-document.getElementById("nextclicktime2").innerHTML=next_click_time;
+this_click_time = new Date().getTime();
+
+
+document.getElementById("prevclicktime2").innerHTML=prev_click_time;
+document.getElementById("thisclicktime2").innerHTML=this_click_time;
  
  
  
@@ -50,6 +54,7 @@ document.getElementById("nextclicktime2").innerHTML=next_click_time;
       my_media = new Media(audio);
       my_media.play();
       delete my_media;
+	  prev_click_time=this_click_time;
 
 	
 }
@@ -90,10 +95,10 @@ document.getElementById("nextclicktime2").innerHTML=next_click_time;
 			<table class="toptable">
                 <tr>
                      <th>A</th>
-					 <p id="initclicktime">Initial click time</p>
-					 <p id="initclicktime2">Initial click time</p>
-					 <p id="nextclicktime">Next click time</p>
-					 <p id="nextclicktime2">Next2 click time</p>					 					 
+					 <p id="prevclicktime">Previous click time</p>
+					 <p id="prevclicktime2">Prev2 click time</p>
+					 <p id="thisclicktime">This click time</p>
+					 <p id="thisclicktime2">This2 click time</p>					 					 
                 </tr>
                 <tr>
                      <td>&nbsp;</td>
