@@ -3,30 +3,6 @@
  * Released under MIT license, http://cubiq.org/license
  */
 
-
-//var last_click_time = new Date().getTime();
-
-//$("a").live("click", function(ev) {
-
-//	var click_time = ev["timeStamp"];
-
-//	if (click_time && (click_time - last_click_time) < 1000) {
-
-//		ev.stopImmediatePropagation();
-
-//		return false;
-
-//	}    
-
-//	last_click_x = click_x;
-
-//	last_click_y = click_y;
-
-//	last_click_time = click_time;
-
-//});
-
-
 (function(){
 var m = Math,
 	vendor = (/webkit/i).test(navigator.appVersion) ? 'webkit' :
@@ -316,7 +292,7 @@ TWIS.prototype = {
 				// Find the last touched element
 				target = point.target;
 				while (target.nodeType != 1) target = target.parentNode;
-											
+
 				if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA') {
 					ev = document.createEvent('MouseEvents');
 					ev.initMouseEvent('click', true, true, e.view, 1,
