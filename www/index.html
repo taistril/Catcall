@@ -37,8 +37,8 @@ var first_click_time = new Date().getTime();
 var this_click_time = new Date().getTime();
 var prev_click_time = new Date().getTime();
 var gap_time = new Date().getTime();
-document.getElementById("prevclicktime2").innerHTML=prev_click_time;
-document.getElementById("thisclicktime2").innerHTML=this_click_time;
+document.getElementById("prevgaptime2").innerHTML=prev_click_time;
+document.getElementById("gaptime2").innerHTML=this_click_time;
 
 function playA(image, audio) {
  
@@ -50,15 +50,14 @@ this_click_time = new Date().getTime();
 
 gap_time=this_click_time-prev_click_time; 
  
-document.getElementById("thisclicktime2").innerHTML=gap_time;
+document.getElementById("gap_time2").innerHTML=gap_time;
  
       document.images[image].src = "listengreen30x30.png";
 	  
       my_media = new Media(audio);
       my_media.play();
       delete my_media;
-	  prev_click_time=this_click_time;
-//	  prev_gap_time=gap_time;	  
+	  prev_gap_time=gap_time;	  
 
 	
 }
@@ -99,10 +98,10 @@ document.getElementById("thisclicktime2").innerHTML=gap_time;
 			<table class="toptable">
                 <tr>
                      <th>A</th>
-					 <p id="prevclicktime">Previous Gap time</p>
-					 <p id="prevclicktime2">Prev2 gap time</p>
-					 <p id="thisclicktime">This Gap time</p>
-					 <p id="thisclicktime2">This2 gap time</p>					 					 
+					 <p id="prevgaptime">Previous Gap time</p>
+					 <p id="prevgaptime2">Prev2 gap time</p>
+					 <p id="gaptime">This Gap time</p>
+					 <p id="gaptime2">This2 gap time</p>					 					 
                 </tr>
                 <tr>
                      <td>&nbsp;</td>
