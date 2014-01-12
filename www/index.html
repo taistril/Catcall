@@ -33,12 +33,15 @@ function loaded() {
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 window.addEventListener('load', loaded, false);
-var last_click_time = new Date().getTime();
+var first_click_time = new Date().getTime();
+var next_click_time = new Date().getTime();
+document.getElementById("initialclicktime2").innerHTML=first_click_time;
+document.getElementById("nextclicktime2").innerHTML=next_click_time;
 
 function playA(image, audio) {
  
- 
- document.getElementById("demo").innerHTML=last_click_time;
+next_click_time = new Date().getTime();
+document.getElementById("nextclicktime2").innerHTML=next_click_time;
  
  
  
@@ -87,7 +90,10 @@ function playA(image, audio) {
 			<table class="toptable">
                 <tr>
                      <th>A</th>
-					 <p id="demo">My First Paragraph</p>
+					 <p id="initclicktime">Initial click time</p>
+					 <p id="initclicktime2">Initial click time</p>
+					 <p id="nextclicktime">Next click time</p>
+					 <p id="nextclicktime2">Next2 click time</p>					 					 
                 </tr>
                 <tr>
                      <td>&nbsp;</td>
