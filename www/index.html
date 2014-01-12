@@ -33,12 +33,12 @@ function loaded() {
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 window.addEventListener('load', loaded, false);
-
+var last_click_time = new Date().getTime();
 
 function playA(image, audio) {
  
  
- document.getElementById("demo").innerHTML="My First JavaScript";
+ document.getElementById("demo").innerHTML=last_click_time;
  
  
  
