@@ -36,6 +36,7 @@ window.addEventListener('load', loaded, false);
 var first_click_time = new Date().getTime();
 var this_click_time = new Date().getTime();
 var prev_click_time = new Date().getTime();
+var gap_time = new Date().getTime();
 document.getElementById("prevclicktime2").innerHTML=prev_click_time;
 document.getElementById("thisclicktime2").innerHTML=this_click_time;
 
@@ -47,7 +48,7 @@ this_click_time = new Date().getTime();
 document.getElementById("prevclicktime2").innerHTML=prev_gap_time;
 document.getElementById("thisclicktime2").innerHTML=gap_time;
 
-time_gap=this_click_time-prev_click_time; 
+gap_time=this_click_time-prev_click_time; 
  
  
       document.images[image].src = "listengreen30x30.png";
