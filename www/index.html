@@ -37,6 +37,11 @@ window.addEventListener('load', loaded, false);
 
 function playA(image, audio) {
  
+ 
+ document.getElementById("demo").innerHTML="My First JavaScript";
+ 
+ 
+ 
       document.images[image].src = "listengreen30x30.png";
 	  
       my_media = new Media(audio);
@@ -46,7 +51,27 @@ function playA(image, audio) {
 	
 }
 
+//var last_click_time = new Date().getTime();
 
+//$("a").live("click", function(ev) {
+
+//	var click_time = ev["timeStamp"];
+
+//	if (click_time && (click_time - last_click_time) < 1000) {
+
+//		ev.stopImmediatePropagation();
+
+//		return false;
+
+//	}    
+
+//	last_click_x = click_x;
+
+//	last_click_y = click_y;
+
+//	last_click_time = click_time;
+
+//});
 
 
 
@@ -62,6 +87,7 @@ function playA(image, audio) {
 			<table class="toptable">
                 <tr>
                      <th>A</th>
+					 <p id="demo">My First Paragraph</p>
                 </tr>
                 <tr>
                      <td>&nbsp;</td>
