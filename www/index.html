@@ -45,8 +45,13 @@ gap_time=this_click_time-prev_click_time;
 
     if (gap_time > 1000) {
       document.images[image].src = "listengreen30x30.png";
-      test_media = new Media(0, /android_asset/www/mp3s/A1.mp3);
-      test_media.play();
+
+
+	  myMedia = new Media("/android_asset/www/mp3s/A1.mp3");
+
+	  myMedia.play();
+
+
 	  my_media = new Media(audio, function()
                     {
                        this.release();
