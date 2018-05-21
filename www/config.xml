@@ -44,7 +44,9 @@ taistril
         <gap:plugin name="org.apache.cordova.splashscreen" source="npm"/>      
     
     
-        <gap:plugin name="org.apache.cordova.core.media" />
+     <!--   <gap:plugin name="org.apache.cordova.core.media" />  -->
+     
+    	<plugin name="cordova-plugin-media" spec="~5.0.2" />
     
     
 
