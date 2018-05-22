@@ -55,7 +55,7 @@ taistril
      
       <!--	<plugin name="cordova-plugin-media" spec="~5.0.2" />  -->
       
-        	<gap:plugin name="cordova-plugin-media" >   
+        	<plugin name="cordova-plugin-media" >   
         	
         <!--	<plugin name="Media" value="org.apache.cordova.AudioHandler" />  -->
     
