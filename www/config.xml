@@ -57,7 +57,7 @@ taistril
       
         <!--	<gap:plugin name="cordova-plugin-media" source="npm"/>   -->
         	
-        <!--	<plugin name="Media" value="org.apache.cordova.AudioHandler" />  -->
+        	<plugin name="Media" value="org.apache.cordova.AudioHandler" />  
     
 
 <!-- Icons -->
