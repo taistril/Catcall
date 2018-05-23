@@ -28,8 +28,6 @@ function loaded() {
 	}, 2000);
 */
 
-        document.addEventListener("deviceready", onDeviceReady, false);
-
 	// Free some mem
 	window.removeEventListener('load', loaded, false);
 }
@@ -62,7 +60,8 @@ function loaded() {
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
 window.addEventListener('load', loaded, false);
-// window.addEventListener('load', onLoad, false);
+
+window.addEventListener('load', onLoad, false);
 
 var this_click_time = new Date().getTime();
 var prev_click_time = new Date().getTime();
