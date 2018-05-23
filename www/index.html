@@ -29,13 +29,11 @@ function loaded() {
 */
 
 
-     document.addEventListener("deviceready", onDeviceReady, false);
-
 	// Free some mem
 	window.removeEventListener('load', loaded, false);
 }
 
-/*
+
     // Call onDeviceReady when Cordova is loaded.
     //
     // At this point, the document has loaded but cordova-2.4.0.js has not.
@@ -50,9 +48,9 @@ function loaded() {
     //
 */
 
-function onDeviceReady() {
+    function onDeviceReady() {
         // Now safe to use the Cordova API
-    };
+    }
 
 
 
@@ -99,7 +97,7 @@ gap_time=this_click_time-prev_click_time;
 
 
 </head>
-<body>
+<body onload="onLoad()">
 
 <div id="wrapper">
 	<div id="slider">
