@@ -59,7 +59,10 @@ function loaded() {
 
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
 window.addEventListener('load', loaded, false);
+window.addEventListener('load', onLoad, false);
+
 var this_click_time = new Date().getTime();
 var prev_click_time = new Date().getTime();
 var gap_time = new Date().getTime();
@@ -97,7 +100,7 @@ gap_time=this_click_time-prev_click_time;
 
 
 </head>
-<body onload="onLoad()">
+<body>
 
 <div id="wrapper">
 	<div id="slider">
