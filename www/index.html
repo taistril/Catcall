@@ -28,6 +28,7 @@ function loaded() {
 	}, 2000);
 */
 
+        document.addEventListener("deviceready", onDeviceReady, false);
 
 	// Free some mem
 	window.removeEventListener('load', loaded, false);
