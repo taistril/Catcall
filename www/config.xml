@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.AyUp"
+    id        = "com.phonegap.Catcall"
     versionCode = "450"
     version   = "3.0.0">
 
-<name>Ay Up</name>
+<name>Catcall</name>
 
 <description>
-A Yorkshire-to-English dictionary.
+Cat call software
 </description>
 
 <author href="https://build.phonegap.com" email="mail@taistril.com">
