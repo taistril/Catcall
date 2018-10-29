@@ -52,7 +52,7 @@ taistril
         <plugin name="cordova-plugin-media" spec="3.0.1" />   
     
         
-        <plugin name="cordova-plugin-media-capture" source="npm" spec="2.0.0"/>  
+        <plugin name="cordova-plugin-media-capture" source="npm" spec="3.0.2"/>  
         	
 
     
