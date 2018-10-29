@@ -42,7 +42,7 @@ taistril
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
     
-        <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>     
+        <gap:plugin name="cordova-plugin-splashscreen" source="npm" spec="5.0.2"/>     
         
      <!--
         <cordova plugin add org.apache.cordova.media-capture/>
