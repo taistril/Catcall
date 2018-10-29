@@ -81,6 +81,8 @@ taistril
 
 <!-- The default splash must be named splash.png and must reside in the root of your application folder.-->
 <!-- <gap:splash src="splash.png" /> -->
+
+<!--
 <gap:splash src="splash.png" />
 
 <gap:splash src="splash/ios/Default-Landscape.png" width="1024" height="768" />
@@ -102,5 +104,7 @@ taistril
 
 <gap:splash src="splash/bb/splash.png" gap:platform="blackberry" />
 <gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
+
+-->
 
 </widget>
