@@ -89,6 +89,7 @@ taistril
 <gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
 <gap:splash src="splash/ios/Default.png" width="320" height="480" />
 <gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" />
+-->
 
 <!--
 <gap:splash src="splash/android/splash320x426.9.png" gap:platform="android" gap:density="ldpi" />
@@ -97,6 +98,7 @@ taistril
 <gap:splash src="splash/android/splash320x426.9.png" gap:platform="android" gap:density="xhdpi" />
 -->
 
+<!--
 <gap:splash src="splash/android/splash-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
 <gap:splash src="splash/android/splash-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
 <gap:splash src="splash/android/splash-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
