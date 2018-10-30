@@ -92,7 +92,24 @@ gap_time=this_click_time-prev_click_time;
     </tr>
   </table>
 	<button onclick="document.getElementById('body2').style.display = 'block'; document.getElementById('body1').style.display = 'none';">Settings</button></div>
-<div id="body2">Body 2 <button onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none'">;<img src="back1.png"></button></div>
+<div id="body2">
+
+    <button onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none'">;<img src="backbutton.png"></button>
+	
+	  <table width="31%" border="1">
+    <tr> 
+      <td><img src="Recordyourcatcall.png" width="180" height="180" align="absmiddle"></td>
+
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td><a onclick="playtheaudio(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="Playyourcatcallback.png" width="180" height="180"></a></td>	
+    </tr>
+  </table>
+	
+	</div>
 <div id="page-footer"><h1><font size="6" color="white">Cat Call</font></h1></div>
 
 <!--
