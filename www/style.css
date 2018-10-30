@@ -36,6 +36,28 @@ body {
 	-webkit-transform:translate3d(0,0,0);
 }
 
+#page-title
+{
+    background-color: blue;
+    height: 20%;
+}
+
+#page-footer
+{
+    background-color: blue;
+    height: 20%;
+}
+
+#body1, #body2
+{
+    height: 80%;
+}
+
+#body2
+{
+    display: none;
+}
+
 .page {
 	-webkit-box-sizing:border-box;
 	position:relative;
