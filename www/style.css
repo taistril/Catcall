@@ -48,12 +48,12 @@ body {
     height: 10%;
 }
 
-#body1, #body2
+#body1, #body2, #body3
 {
     height: 80%;
 }
 
-#body2
+#body2, #body3
 {
     display: none;
 }
