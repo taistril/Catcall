@@ -44,7 +44,9 @@ this_click_time = new Date().getTime();
 gap_time=this_click_time-prev_click_time; 
  
     if (gap_time > 1000) {
+	/*
       document.images[image].src = "listengreen30x30.png";
+	*/
 	  my_media = new Media(audio, function()  
                     {
                        this.release();
@@ -84,7 +86,9 @@ gap_time=this_click_time-prev_click_time;
       <table border="0">
       <tr> 
 		<td><button class="button" onclick="document.getElementById('body2').style.display = 'block'; document.getElementById('body1').style.display = 'none';"><img src="settings50x50.png"></button></td>
-        <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+        <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+		<td><button class="button" onclick="document.getElementById('body3').style.display = 'block'; document.getElementById('body1').style.display = 'none';"><img src="questionmark50x50.png"></button></td>		
+		<td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
       </tr>
     </table>
 	</div>
@@ -134,6 +138,20 @@ gap_time=this_click_time-prev_click_time;
   </table>
   </div>	
 	</div>
+	
+<div id="body3">
+
+    <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body3').style.display = 'none'">;<img src="backbutton52x50.png"></button>
+	<div align="center">	
+	  <table width="80%" border="0">
+    <tr> 
+      <td>HELP</td>
+    </tr>
+  </table>
+  </div>	
+	</div>	
+	
+	
 <div id="page-footer"><h1><font size="6" color="white">Cat Call</font></h1></div>
 
 <!--
