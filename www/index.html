@@ -40,7 +40,8 @@ var ilist = document.images;
 	
 function playtheaudio(image, audio) {
  
-document.images[7].src = "spinner.gif";
+
+document.images[6].src = "spinner.gif";
  
 this_click_time = new Date().getTime();
 
@@ -103,7 +104,7 @@ gap_time=this_click_time-prev_click_time;
   <br>
       <table border="0">
       <tr> 
-		<td><button class="button" onclick="document.getElementById('body2').style.display = 'block'; document.getElementById('body1').style.display = 'none';document.images[7].src = 'Replayyourrecording120x120.png';"><img src="settings50x50.png"></button></td>
+		<td><button class="button" onclick="document.getElementById('body2').style.display = 'block'; document.getElementById('body1').style.display = 'none';"><img src="settings50x50.png"></button></td>
         <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
 		<td><button class="button" onclick="document.getElementById('body3').style.display = 'block'; document.getElementById('body1').style.display = 'none';"><img src="questionmark50x50.png"></button></td>		
 		<td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
@@ -134,7 +135,10 @@ gap_time=this_click_time-prev_click_time;
 	</div>
 	
 <div id="body2">
-
+<!--
+    <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none';document.images[7].src = 'Replayyourrecording120x120.png';">;<img src="backbutton52x50.png"></button>
+-->
+	
     <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none'">;<img src="backbutton52x50.png"></button>
 	<div align="center">	
 	  <table width="31%" border="0">
