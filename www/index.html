@@ -49,19 +49,6 @@ gap_time=this_click_time-prev_click_time;
  
     if (gap_time > 1000) {
 	
-
-/*
-       for(var i = 0; i < ilist.length; i++) {
-                    if(ilist[i].src == 'Replayyourrecording120x120.png') {
-        // found the banner
-		            document.images[i].src = "spinner.gif";
-           }
-       }
-/*
-
-	/*
-      document.images[image].src = "listengreen30x30.png";
-	*/
 	  my_media = new Media(audio, function()  
                     {
                        this.release();
@@ -70,15 +57,19 @@ gap_time=this_click_time-prev_click_time;
 	  
       my_media.play();
       delete my_media;
-	  /*
-	  document.images[7].src = "Replayyourrecording120x120.png";
-	  */
 	  
 	}
 	
 	  prev_click_time=this_click_time;
 }
 
+function putreplaybuttonback() {
+ 
+
+document.images[7].src = "Replayyourrecording120x120.png";
+
+}
+ 
 </script>
 
 
@@ -139,17 +130,17 @@ gap_time=this_click_time-prev_click_time;
     <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none';document.images[7].src = 'Replayyourrecording120x120.png';">;<img src="backbutton52x50.png"></button>
 -->
 	
-    <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none'">;<img src="backbutton52x50.png"></button>
+    <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none';putreplaybuttonback();">;<img src="backbutton52x50.png"></button>
 	<div align="center">	
 	  <table width="31%" border="0">
     <tr> 
-      <td><img src="Recordyourcatcall120x120.png"></td>
+      <td><a onclick="putreplaybuttonback();"><img src="Recordyourcatcall120x120.png"></a></td>
     </tr>
     <tr> 
       <td>&nbsp;</td>
     </tr>
     <tr> 
-      <td><img src="Stoptherecording120x120.png"></td>
+      <td><a onclick="putreplaybuttonback();"><img src="Stoptherecording120x120.png"></a></td>
     </tr>
     <tr> 
       <td>&nbsp;</td>
