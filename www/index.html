@@ -36,7 +36,8 @@ window.addEventListener('load', loaded, false);
 var this_click_time = new Date().getTime();
 var prev_click_time = new Date().getTime();
 var gap_time = new Date().getTime();
-
+var ilist = document.images;
+	
 function playtheaudio(image, audio) {
  
 this_click_time = new Date().getTime();
@@ -44,6 +45,15 @@ this_click_time = new Date().getTime();
 gap_time=this_click_time-prev_click_time; 
  
     if (gap_time > 1000) {
+	
+
+
+       for(var i = 0; i < ilist.length; i++) {
+                    if(ilist[i].src == 'Replayyourrecording120x120.png') {
+        // found the banner
+		            document.images[i].src = "spinner.gif";
+           }
+       }
 	/*
       document.images[image].src = "listengreen30x30.png";
 	*/
