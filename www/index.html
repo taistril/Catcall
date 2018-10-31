@@ -40,7 +40,7 @@ var ilist = document.images;
 	
 function playtheaudio(image, audio) {
  
- document.images[6].src = "spinner.gif";
+document.images[7].src = "spinner.gif";
  
 this_click_time = new Date().getTime();
 
@@ -49,13 +49,15 @@ gap_time=this_click_time-prev_click_time;
     if (gap_time > 1000) {
 	
 
-
+/*
        for(var i = 0; i < ilist.length; i++) {
                     if(ilist[i].src == 'Replayyourrecording120x120.png') {
         // found the banner
 		            document.images[i].src = "spinner.gif";
            }
        }
+/*
+
 	/*
       document.images[image].src = "listengreen30x30.png";
 	*/
