@@ -39,7 +39,7 @@ var gap_time = new Date().getTime();
 var ilist = document.images;
 
 function playtheaudio1(image, audio) {
-document.images[3].src = "spinner1.gif";
+document.images[2].src = "spinner1.gif";
 this_click_time = new Date().getTime();
 gap_time=this_click_time-prev_click_time; 
  
@@ -72,7 +72,7 @@ gap_time=this_click_time-prev_click_time;
 }
 
 function putplaycatcallbuttonback() {
-document.images[3].src = "Playcatcall120x120.png";
+document.images[2].src = "Playcatcall120x120.png";
 }
 
 function putreplaybuttonback() {
@@ -106,7 +106,7 @@ document.images[7].src = "Replayyourrecording120x120.png";
   <br>	  
     <table border="0">
       <tr> 
-        <td><a onclick="playtheaudio2(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="Playcatcall120x120.png"></a></td>
+        <td><a onclick="playtheaudio1(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="Playcatcall120x120.png"></a></td>
       </tr>
       <tr> 
         <td>&nbsp;</td>
