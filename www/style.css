@@ -48,12 +48,12 @@ body {
     height: 10%;
 }
 
-#body1, #body2, #body3
+#mainscreen, #settingsscreen, #helpscreen
 {
     height: 80%;
 }
 
-#body2, #body3
+#settingsscreen, #helpscreen
 {
     display: none;
 }
