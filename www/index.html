@@ -37,37 +37,46 @@ var this_click_time = new Date().getTime();
 var prev_click_time = new Date().getTime();
 var gap_time = new Date().getTime();
 var ilist = document.images;
-	
-function playtheaudio(image, audio) {
- 
 
-document.images[7].src = "spinner.gif";
- 
+function playtheaudio1(image, audio) {
+document.images[3].src = "spinner1.gif";
 this_click_time = new Date().getTime();
-
 gap_time=this_click_time-prev_click_time; 
  
     if (gap_time > 1000) {
-	
 	  my_media = new Media(audio, function()  
                     {
                        this.release();
                     });
-	  
-	  
       my_media.play();
       delete my_media;
-	  
 	}
-	
 	  prev_click_time=this_click_time;
 }
 
-function putreplaybuttonback() {
+	
+function playtheaudio2(image, audio) {
+document.images[7].src = "spinner2.gif";
+this_click_time = new Date().getTime();
+gap_time=this_click_time-prev_click_time; 
  
+    if (gap_time > 1000) {
+	  my_media = new Media(audio, function()  
+                    {
+                       this.release();
+                    });
+      my_media.play();
+      delete my_media;
+	}
+	  prev_click_time=this_click_time;
+}
 
+function putplaycatcallbuttonback() {
+document.images[3].src = "Playcatcall120x120.png";
+}
+
+function putreplaybuttonback() {
 document.images[7].src = "Replayyourrecording120x120.png";
-
 }
  
 </script>
@@ -76,28 +85,16 @@ document.images[7].src = "Replayyourrecording120x120.png";
 </head>
 <body>
 
-<!--
-			   <table class="maintable">
-                     <tr> 
-					      <th><a onclick="playtheaudio(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="listen30x30.png"></a></th> 										
-						  <th>&nbsp;</th> 						  					 
-					      <th>Abide</th> 
-						  <th>&nbsp;</th> 
-						  <th>Bear</th> 
-                     </tr>
-					 
- 			   </table>					 
--->
-
 <div id="page-title"><h1><font size="6" color="white">Cat Call</font></h1></div>
-<div id="body1"> 
+
+<div id="mainscreen"> 
   <div align="right">
   <br>
       <table border="0">
       <tr> 
-		<td><button class="button" onclick="document.getElementById('body2').style.display = 'block'; document.getElementById('body1').style.display = 'none';"><img src="settings50x50.png"></button></td>
+		<td><button class="button" onclick="putplaycatcallbuttonback();document.getElementById('settingsscreen').style.display = 'block'; document.getElementById('mainscreen').style.display = 'none';"><img src="settings50x50.png"></button></td>
         <td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
-		<td><button class="button" onclick="document.getElementById('body3').style.display = 'block'; document.getElementById('body1').style.display = 'none';"><img src="questionmark50x50.png"></button></td>		
+		<td><button class="button" onclick="putplaycatcallbuttonback();document.getElementById('helpscreen').style.display = 'block'; document.getElementById('mainscreen').style.display = 'none';"><img src="questionmark50x50.png"></button></td>		
 		<td>&nbsp&nbsp&nbsp&nbsp&nbsp</td>
       </tr>
     </table>
@@ -109,28 +106,21 @@ document.images[7].src = "Replayyourrecording120x120.png";
   <br>	  
     <table border="0">
       <tr> 
-        <td><img src="Playcatcall120x120.png"></td>
+        <td><a onclick="playtheaudio2(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="Playcatcall120x120.png"></a></td>
       </tr>
       <tr> 
         <td>&nbsp;</td>
       </tr>
       <tr> 
-        <td><img src="Stopcatcall120x120.png"></td>
+        <td><a onclick="putplaycatcallbuttonback();"><img src="Stopcatcall120x120.png"></a></td>
       </tr>
     </table>
   </div>
-  <!--
-  <button onclick="document.getElementById('body2').style.display = 'block'; document.getElementById('body1').style.display = 'none';">Settings</button>
--->
+</div>
 	
-	</div>
-	
-<div id="body2">
-<!--
-    <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none';document.images[7].src = 'Replayyourrecording120x120.png';">;<img src="backbutton52x50.png"></button>
--->
-	
-    <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body2').style.display = 'none';putreplaybuttonback();">;<img src="backbutton52x50.png"></button>
+<div id="settingsscreen">
+
+    <button class="button" onclick="document.getElementById('mainscreen').style.display = 'block'; document.getElementById('settingsscreen').style.display = 'none';putreplaybuttonback();">;<img src="backbutton52x50.png"></button>
 	<div align="center">	
 	  <table width="31%" border="0">
     <tr> 
@@ -146,15 +136,15 @@ document.images[7].src = "Replayyourrecording120x120.png";
       <td>&nbsp;</td>
     </tr>	
     <tr> 
-      <td><a onclick="playtheaudio(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="Replayyourrecording120x120.png"></a></td>	
+      <td><a onclick="playtheaudio2(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="Replayyourrecording120x120.png"></a></td>	
     </tr>
   </table>
   </div>	
-	</div>
+</div>
 	
-<div id="body3">
+<div id="helpscreen">
 
-    <button class="button" onclick="document.getElementById('body1').style.display = 'block'; document.getElementById('body3').style.display = 'none'">;<img src="backbutton52x50.png"></button>
+    <button class="button" onclick="document.getElementById('mainscreen').style.display = 'block'; document.getElementById('helpscreen').style.display = 'none'">;<img src="backbutton52x50.png"></button>
 	<div align="center">	
 	  <table width="90%" border="0">
     <tr> 
@@ -172,8 +162,6 @@ document.images[7].src = "Replayyourrecording120x120.png";
 		 Do this by using the app each time you also call your cat for about 10 days.
 		 <br>
 		 After that your cat should recognise your app call version.
-		 The app makes a noise whilst transmitting your catcall so that you know that it is working and
-		 to show when it stops.
 		 </font>
 	  </p>
 	  </td>
@@ -184,27 +172,6 @@ document.images[7].src = "Replayyourrecording120x120.png";
 	
 	
 <div id="page-footer"><h1><font size="6" color="white">Cat Call</font></h1></div>
-
-<!--
-					 
-<div align="center">
-  <table width="31%" border="1">
-    <tr> 
-      <td width="48%"><img src="Recordyourcatcall.png" width="180" height="180" align="absmiddle"></td>
-
-    </tr>
-    <tr> 
-      <td width="48%">&nbsp;</td>
-      <td width="3%">&nbsp;</td>
-      <td width="49%">&nbsp;</td>
-    </tr>
-    <tr> 
-      <td width="49%"><a onclick="playtheaudio(0, '/android_asset/www/mp3s/Tiddles.mp3');"><img src="Playyourcatcallback.png" width="180" height="180"></a></td>	
-    </tr>
-  </table>
-</div>
--->
-
 
 <script type="text/javascript">
 		
